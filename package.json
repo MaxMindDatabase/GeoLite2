@@ -6,6 +6,9 @@
   "exports": {
     ".": {
       "import": "./dist/index.js"
+    },
+    "./types": {
+      "import": "./dist/types.js"
     }
   },
   "scripts": {
@@ -23,11 +26,15 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "@maxmind/geoip2-node": "^6.2.0"
+  },
   "devDependencies": {
+    "@types/node": "^24.7.2",
     "prettier": "^3.6.2"
   },
   "files": [
+    "database",
     "dist"
   ]
 }
