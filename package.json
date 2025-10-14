@@ -1,0 +1,33 @@
+{
+  "name": "@maxminddatabase/geolite2",
+  "version": "1.0.0",
+  "description": "MaxMind Database GeoLite2",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc",
+    "clean": "npx rimraf ./dist",
+    "npm:publish": "npm run clean && npm run build && npm publish",
+    "prettier": "prettier --write \"src/**/*.ts\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:MaxMindDatabase/GeoLite2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "prettier": "^3.6.2"
+  },
+  "files": [
+    "dist"
+  ]
+}
