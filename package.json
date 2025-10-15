@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:MaxMindDatabase/GeoLite2.git"
+    "url": "git+ssh://git@github.com/MaxMindDatabase/GeoLite2.git"
   },
   "keywords": [],
   "author": "",
@@ -36,5 +36,8 @@
   "files": [
     "database",
     "dist"
-  ]
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
 }
