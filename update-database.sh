@@ -11,6 +11,8 @@ WORK_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
 SOURCE_DIR=/usr/share/GeoIP
 TARGET_DIR=${WORK_DIR}/database
 
+UPDATED=false
+
 cd "${WORK_DIR}"
 
 git pull origin main
@@ -36,7 +38,13 @@ for file in "${FILES[@]}"; do
 
 	cp "${source_file}" "${target_file}"
 	echo "Updated ${file}."
+	UPDATED=true
 done
+
+if [ "${UPDATED}" == true ]; then
+	npm version patch --no-git-tag-version
+	npm run npm:publish
+fi
 
 git add .
 git commit -m "Update GeoIP databases"

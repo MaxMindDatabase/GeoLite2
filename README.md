@@ -3,7 +3,7 @@
 ## Installation
 
 ```bash
-npm install @MaxMindDatabase/GeoLite2
+npm install @maxminddatabase/geolite2
 ```
 
 ## Examples
