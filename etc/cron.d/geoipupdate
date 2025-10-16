@@ -1,2 +1,2 @@
-0 16 * * * root /usr/bin/geoipupdate
-5 16 * * * root ~/GeoLite2/update-database.sh
+0 16 * * * root /usr/bin/geoipupdate >> /var/log/geoipupdate.log 2>&1
+5 16 * * * root ~/GeoLite2/update-database.sh >> /var/log/geoipupdate.log 2>&1
