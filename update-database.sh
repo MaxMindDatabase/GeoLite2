@@ -39,7 +39,7 @@ for file in "${FILES[@]}"; do
 done
 
 git add .
-git commit -m "Update GeoIP databases" || echo "No changes to commit."
+git commit -m "Update GeoIP databases"
 git push origin main
 
 echo "Database update process completed."
