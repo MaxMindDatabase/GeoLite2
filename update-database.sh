@@ -42,8 +42,11 @@ for file in "${FILES[@]}"; do
 done
 
 if [ "${UPDATED}" == true ]; then
+	npm ci
 	npm version patch --no-git-tag-version
-	npm run npm:publish
+	npx rimraf ./dist
+	tsc
+	npm publish
 fi
 
 git add .
