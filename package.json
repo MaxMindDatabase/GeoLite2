@@ -23,7 +23,14 @@
     "type": "git",
     "url": "git+ssh://git@github.com/MaxMindDatabase/GeoLite2.git"
   },
-  "keywords": [],
+  "keywords": [
+    "MaxMind",
+    "Database",
+    "GeoLite2",
+    "ASN",
+    "City",
+    "Country"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
