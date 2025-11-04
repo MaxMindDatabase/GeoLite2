@@ -1,6 +1,6 @@
 {
   "name": "@maxminddatabase/geolite2",
-  "version": "1.0.19",
+  "version": "1.0.20",
   "description": "MaxMind Database GeoLite2",
   "type": "module",
   "exports": {
